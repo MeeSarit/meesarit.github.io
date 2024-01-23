@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+            <div class="logo">
+                <a href="index.html">Profile</a>
+            </div>
+            <ul class="menu">
+                <li class="active"><a href="Experience.html">Experience</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="ContactUs.html">Contact Me</a></li>
+            </ul>
+            </div>
+        </div>
+
+            <div class="column side30">
+                <div class="card" style="background-color: #f0f0f0;">
+                  <h1>Education</h1>
+                  <div class="text">
+                  <p>Silpakorn University (Thailand),2020-2023<br>
+                    Faculty of Engineering and Industrial Technology<br>
+                    Major in Electronic and Computer System <br>
+                    Engineering | GPA : 2.89</p>
+                  </div>
+                </div>
+              </div>
+
+              <div  class="row column side70">
+                <div class="card mid" style="background-color: #f0f0f0;">
+                  <h1>Internship-Cooperative Education</h1>
+                  <div class="mid" style="margin: 5px;">
+                  <img src="LSWP1.png" style=" width:45%; border-radius: 12px; margin: 5px;">
+                  <img src="LSWP2.png" style=" width:45%; border-radius: 12px; margin: 5px;">
+                  </div>
+                  <div style="margin-left: 50px;">
+                  <h3>Lucky Star Weaving+ Company Limited</h3>
+                  <p>Internship period : 18 April 2023 to 6 October 2023<br>
+                    Maintenance Department</p>
+                  <p>Lucky Star Weaving Company Limited, in the area of cleaner plastic cloth,
+                    has developed creative products and services. Continuous standards that customers demand.</p>
+                  </div>
+                </div><!-- card -->
+
+                <div class="card" style="background-color: #f0f0f0;">
+                    <h1 style="padding: 20px;text-align:center;">Training</h1>
+                        
+                        <div class="mySlides">
+                          <img class="imgB" src="train1.jpg" style="float: left; width:50%;">
+                        </div>
+                        <div class="mySlides">
+                          <img class="imgB" src="train2.jpg" style="float: left; width:50%">
+                        </div>
+                        <div class="mySlides">
+                          <img class="imgB" src="train4.jpg" style="float: left; width:50%">
+                        </div>
+                        <div class="mySlides">
+                          <img class="imgB" src="train5.jpg" style="float: left; width:50%">
+                        </div>
+                        <div class="mySlides">
+                          <img class="imgB" src="train6.jpg" style="float: left; width:50%">
+                        </div>
+                      
+                        <div class="row">
+                          <div class="column20">
+                            <img class="imgB demo" src="train1.jpg" style="width:100%" onclick="currentSlide(1)">
+                          </div>
+                          <div class="column20">
+                            <img class="imgB demo" src="train2.jpg" style="width:100%" onclick="currentSlide(2)">
+                          </div>
+                          <div class="column20">
+                            <img class="imgB demo" src="train4.jpg" style="width:100%" onclick="currentSlide(4)">
+                          </div>
+                          <div class="column20">
+                            <img class="imgB demo" src="train5.jpg" style="width:100%" onclick="currentSlide(5)">
+                          </div>    
+                          <div class="column20">
+                            <img class="imgB demo" src="train6.jpg" style="width:100%" onclick="currentSlide(6)">
+                          </div>
+                        </div><!-- row -->
+                  </div><!-- card -->
+            </div>
+    </nav>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow.png" alt=""  style="width: 100%;"></button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " activee";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+    </script>
+
+
+    <!-- <footer>
+        <p>Make By Mr.Sarit</p>
+    </footer> -->
+
+</body>
+</html>

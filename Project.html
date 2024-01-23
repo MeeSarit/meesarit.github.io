@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+            <div class="logo">
+                <a href="index.html">Profile</a>
+            </div>
+            <ul class="menu">
+                <li><a class="" href="Experience.html">Experience</a></li>
+                <li class="active"><a class="" href="Project.html">Project</a></li>
+                <li><a  href="ContactUs.html">Contact Me</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+        <div style="border: 2px solid black; margin: 10px; background-color: #f0f0f0;">
+            <div class="mid" style="margin: 10px;">
+                <h2 style="margin-top: 3px;">Water Monitoring System</h2>
+                <p>Lucky Star Weaving Company Limited, in the area of cleaner plastic cloth, has developed creative products and services. Continuous standards that customers demand and positive results from the factory's operations in the Cooperative Education Project in Lucky Star Weaving Company Limited, in the Maintenance department needed a system to automatically warn of problems in the Chiller water system, air dish, and soft water ball. It was found that there were no stopping factors. Control targets are Chiller water level, water cooler, soft water level, wind level, and water pump control. Emphasis will be placed on engineers being able to control various normal things as soon as they are successful. Stop working</p>
+                <div class="mid" style="margin: 10px;">
+                <img src="UNO.png" style="width: 25.7%; border-radius: 3%;">
+                <img src="ESP.png" style="width: 19.5%;  border-radius: 3%;">
+                <img src="app.png" style="width: 20.8%;  border-radius: 3%;" >
+                <img src="HMI.png" style="width: 29%;  border-radius: 3%;">
+                </div>
+                <p>The maintenance department can check this by conducting an automatic inspection study. Problematic investigation and display the values on the screen Touch screen to speed up the deceleration control system in a control system that the company has efficient and Notified in advance by the machine operator who must know the office, report the repair via Line Maintenance. The delay time in notifying the repair is reduced by approximately 2 - 3 minutes, which is faster than the original repair notification using the machine operator. Report repairs via Line Maintenance.</p>
+                
+                <div class="mid" style="margin: 10px;">
+                <img src="touchscreen.png" style="width: 33%; padding-right: 5px; border-radius: 3%;">
+                <img src="googlesheet.jpg" style="width: 24.5%; padding-right: 5px; border-radius: 3%;">
+                <img src="LINE.jpg" style="width: 10%; border-radius: 3%;">
+                
+                </div>
+            </div>
+
+            <button class="button button1" onclick="window.open('รายงานการปฏิบัติงานสหกิจศึกษา.pdf')" style="width: 10%; height: 30%; display: block; margin-right: auto; margin-left: auto; margin-bottom: 15px;">Report</button>
+        </div>
+        
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow.png" alt=""  style="width: 100%;"></button>
+    
+    
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <!-- <footer>
+        <p>Make By Mr.Sarit</p>
+    </footer> -->
+
+</body>
+</html>

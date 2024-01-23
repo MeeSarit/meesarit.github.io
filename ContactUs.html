@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+            <div class="logo">
+                <a href="index.html">Profile</a>
+            </div>
+            <ul class="menu">
+                <li><a class="" href="Experience.html">Experience</a></li>
+                <li><a class="" href="Project.html">Project</a></li>
+                <li class="active"><a  href="ContactUs.html">Contact Me</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+        <div class="contact" style="background-color: #f0f0f0; ">
+            <div class="row" style="background-color: #f0f0f0;">
+                <div class="side20 column">
+                    <img src="Call.png" style="float: right; width: 50%; margin: 15px; ">
+                </div>
+                <h1 class="midd">0989075498</h1>
+            </div>
+
+            <div class="row" style="background-color: #fff;">
+                <div class="side20 column">
+                <img src="IG.png" style="float: right; width: 50%; margin: 15px; ">
+                </div>
+                <h1 class="midd">meesarit_24</h1>
+            </div>
+
+            <div class="row" style="background-color: #f0f0f0;">
+                <div class="side20 column">
+                <img src="FB.png" style="float: right; width: 50%; margin: 15px;">
+                </div>
+                <h1 class="midd">สริต วนาวิเศษศักดิ์</h1>
+            </div>
+
+            <div class="row" style="background-color: #fff;">
+                <div class="side20 column">
+                <img src="gmail.png" style="float: right; width: 50%; margin: 15px; margin-top: 30px; margin-bottom: 30px;">
+                </div>
+                <h1 class="midd">meesarit24@gmail.com</h1>
+            </div>
+
+            <div class="row" style="background-color: #f0f0f0;">
+                <div class="side20 column">
+                <img src="Pin.png" style="float: right; width: 50%; margin: 15px; ">
+                </div>
+                <h1 class="midd mini">40/3 m.2, Soifa, Photharam, Ratchaburi, 70120</h1>
+            </div>
+        </div>
+        
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow.png" alt=""  style="width: 100%;"></button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <!-- <footer>
+        <p>Make By Mr.Sarit</p>
+    </footer> -->
+    
+</body>
+</html>

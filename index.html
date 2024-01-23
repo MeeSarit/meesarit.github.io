@@ -1,14 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html land="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
 
-<title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
 </head>
 <body>
+    
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <a href="index.html">Profile</a>
+                </div>
+            <ul class="menu">
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="ContactUs.html">Contact Me</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
 
-<h1>My First Heading</h1>
-Sarit Wanawisetsak
-<p>My first paragraph.</p>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-con">
+                <div  class="hero-info">
+                    <div>
+                        <img src="Mee.jpg" alt="" style="float:right ;width:20%; margin-left: 20PX;">
+                        <h3>About Me</h3>
+                        <p>I am a 4th year student at the Department of Electrical Engineering. Silpakorn University I can use Python to program into the arduino IDE to developan IoT system using ESP32, MQTT and Node-RED cooperate Line Bot to control the hardware.I'm interested in a computer-related position.Software and Hardware seek experience and the opportunity to apply my knowledge to a position at your establishment.</p>
+                    </div>
 
+                    <div style="float: left;width: 30%;padding: 10px;">
+                        <h3>Strength</h3>
+                        <p>Collaborative<br>
+                        Positive Attitude<br>
+                        Responsible<br>
+                        Honest<br>
+                        Drive a car</p>
+                    </div>
+
+                    <div style="float: left;width: 30%;padding: 10px;">
+                        <h3>Weakness</h3>
+                        <p>Experience<br>
+                        Language</p>
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+
+            <div class="blog-con">
+                <div class="blog-item">
+                    <img src="iot.png" alt="">
+                    <h4>Project</h4>
+                    <p>Lucky Star Weaving Company Limited, in the area of cleaner plastic cloth, has developed creative products and services. Continuous standards that customers demand and positive results from the factory's operations in the Cooperative Education Project in Lucky Star Weaving Company Limited, in the Maintenance department needed a system to automatically warn of problems in the Chiller water system, air dish, and soft water ball. It was found that there were no stopping factors. Control targets are Chiller water level, water cooler, soft water level, wind level, and water pump control. Emphasis will be placed on engineers being able to control various normal things as soon as they are successful. Stop working</p>
+                    <a href="Project.html" class="blog-item">Learn More</a>
+                </div>
+           </div> 
+
+           <div class="blog-con">
+                <div class="blog-item">
+                    <img src="อบรม.jpg" alt="">
+                    <h4>Experience</h4>
+                    <p>Intelligence training project</p>
+                    <a href="Experience.html" class="blog-item">Learn More</a>
+                </div>
+           </div>            
+           
+           <div class="blog-con">
+                <div class="blog-item">
+                    <img src="https://i2.wp.com/www.theobservingmind.co/wp-content/uploads/2019/05/What-are-social-media.png?fit=800%2C400&ssl=1" alt="">
+                    <h4>Contact Me</h4>
+                    <a href="ContactUs.html" class="blog-item">Learn More</a>
+                </div>
+           </div> 
+
+        </div>
+    </section>
+
+    <!-- <footer>
+        <p>Make By Mr.Sarit</p>
+    </footer> -->
 </body>
 </html>
